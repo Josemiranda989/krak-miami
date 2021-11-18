@@ -8,17 +8,19 @@
 
   <!-- Contacto -->
   <section class="box-form">
-      <div class="container-mail">
-    <h2 class="text-center">Contacto</h2>
-    <form action="https://formsubmit.co/josemiranda989@gmail.com" class="form-contact" method="post" tabindex="1">
-      <input type="hidden" name="_template" value="table">
-      <input type="text" class="form-contact-input" name="Nombre" placeholder="Nombre" required />
-      <input type="email" class="form-contact-input" name="Email" placeholder="Correo Electronico" required />
-      <input type="tel" class="form-contact-input" name="Telefono" placeholder="Telefono" />
-      <textarea class="form-contact-textarea" name="Contenido" placeholder="Ingrese su consulta" required></textarea>
-      <button type="submit" class="form-contact-button">Enviar</button>
-    </form>
-  </div>
+    <div class="container-mail">
+      <h2 class="text-center">Contacto</h2>
+      <!-- Enviar Mail Consulta con API
+     <form action="https://formsubmit.co/josemiranda989@gmail.com" class="form-contact" method="post" tabindex="1">
+      <input type="hidden" name="_template" value="table"> -->
+      <form action="/form" class="form-contact" method="post">
+        <input type="text" class="form-contact-input" name="Nombre" placeholder="Nombre" required />
+        <input type="email" class="form-contact-input" name="Email" placeholder="Correo Electronico" required />
+        <input type="tel" class="form-contact-input" name="Telefono" placeholder="Telefono" />
+        <textarea class="form-contact-textarea" name="Contenido" placeholder="Ingrese su consulta" required></textarea>
+        <button type="submit" class="form-contact-button">Enviar</button>
+      </form>
+    </div>
   </section>
 
   <div class="form-border position-form1"></div>
