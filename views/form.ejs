@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<%- include("./partials/head") %>
+
+<body>
+  <!-- Navbar -->
+  <%- include("./partials/navbar") %>
+
+  <!-- Contacto -->
+  <section class="box-form">
+      <div class="container-mail">
+    <h2 class="text-center">Contacto</h2>
+    <form action="https://formsubmit.co/josemiranda989@gmail.com" class="form-contact" method="post" tabindex="1">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" class="form-contact-input" name="Nombre" placeholder="Nombre" required />
+      <input type="email" class="form-contact-input" name="Email" placeholder="Correo Electronico" required />
+      <input type="tel" class="form-contact-input" name="Telefono" placeholder="Telefono" />
+      <textarea class="form-contact-textarea" name="Contenido" placeholder="Ingrese su consulta" required></textarea>
+      <button type="submit" class="form-contact-button">Enviar</button>
+    </form>
+  </div>
+  </section>
+
+  <div class="form-border position-form1"></div>
+  <div class="form-border position-form2"></div>
+
+  <!-- Footer -->
+  <%- include("./partials/footer") %>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="../javascripts/index.js"></script>
+</body>
+
+</html>

@@ -1,36 +1,18 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title><%= title %></title>
-  <link rel='stylesheet' href='/stylesheets/style.css' />
-  <link rel="shortcut icon" href="../images/Logos/logo.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <meta name="description" content="Potenciamos tu Proyecto Inmobiliario. Somos el aliado digital que tu Desarrolladora necesita.">
-  <meta name="keywords" content="departamentos, pozo, inmobiliaria, desarrolladores, construcciones, inversiones">
-</head>
+<%- include("./partials/head") %>
 
 <body>
   <!-- Navbar -->
-  <nav>
-    <div class='nav-bar'>
-      <div>
-        <img src="../images/Logos/Logo-krak-Miami.png" alt="Logo de la Empresa">
-      </div>
-      <ul class="nav-seccion">
-        <li>Sección 1</li>
-        <li>Sección 2</li>
-        <li>Sección 3</li>
-      </ul>
-    </div>
-  </nav>
+  <%- include("./partials/navbar") %>
+
   <!-- Bienvenidos -->
   <main class="principal">
     <h1>Bienvenidos a Krak Miami</h1>
   </main>
 
   <!-- Que es Krak Miami -->
-  <div class="contenedor-blanco">
+  <div class="contenedor-blanco" id="krak">
     <div>
       <div class="borde-img seccion-izquierda">
       </div>
@@ -105,7 +87,7 @@
 
   <!-- Pre-Construcción -->
 
-  <div class="preconst1">
+  <div class="preconst1" id="preconst">
     <div class="img-box img-preconst1"></div>
     <div class="preconst-contenido">
       <h2>Pre-Construccion</h2>
@@ -129,7 +111,6 @@
   <div class="box-border position-border1"></div>
   <div class="box-border position-border2"></div>
 
-
   <!-- Banner Guía -->
   <div class="banner space-bottom">
     <img class="imagen-banner" src="../images/Fotos/pexels-antonio-cuellar-4366058.jpg" alt="">
@@ -146,11 +127,11 @@
 
   <!-- Tarjetas -->
 
-  <section class="">
-    <div class="portfolio" id="works">
+  <section id="tarjetas">
+    <div class="portfolio">
 
       <div class="portfolio_item">
-        <a href="https://sport-shoes-dh.herokuapp.com">
+        <a href="#">
           <img src="../images/Fotos/pexels-antonio-cuellar-4366060.jpg" alt="Playa">
           <div class="portfolio_itemOverlay">
             <h5>Inversiones</h5>
@@ -159,7 +140,7 @@
       </div>
 
       <div class="portfolio_item">
-        <a href="https://www.linkedin.com/in/josemiranda989/">
+        <a href="#">
           <img src="../images/Fotos/pexels-live-on-shot-3665354.jpg" alt="Departamento">
           <div class="portfolio_itemOverlay">
             <h5>Multi-family</h5>
@@ -171,57 +152,8 @@
     </div>
   </section>
 
-  <!--   <div class="portfolio_works">
-    <div class="portfolio_item">
-      <a href="#">
-        <img src="../images/Fotos/pexels-antonio-cuellar-4366060.jpg" alt="Linkedin">
-        <div class="portfolio_itemOverlay">
-          <h5>Inversiones</h5>
-        </div>
-      </a>
-    </div>
-
-    <div class="portfolio_item">
-      <a href="#">
-        <img src="../images/Fotos/pexels-live-on-shot-3665354.jpg" alt="SportShoes">
-        <div class="portfolio_itemOverlay">
-          <h5>Multi-family</h5>
-        </div>
-      </a>
-    </div> -->
-
-
-
-<!--   <div class="tarjetas-box">
-    <div class="div-imagen">
-      <div>
-        <h5 class="tarjeta-h5">Inversiones</h5>
-      </div>
-      <img class="desvanecer" src="../images/Fotos/pexels-antonio-cuellar-4366060.jpg" />
-    </div>
-
-    <div class="div-imagen">
-      <div>
-        <h5 class="tarjeta-h5">Multi-family</h5>
-      </div>
-      <img class="desvanecer" src="../images/Fotos/pexels-live-on-shot-3665354.jpg" />
-    </div>
-
-  </div> -->
-
-
-
   <!-- Footer -->
-  <footer class='color-primario'>
-    <img src="../images/Logos/Logo-Krak-Miami---version-blanco.png" alt="">
-    <ul>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-    </ul>
-
-  </footer>
+  <%- include("./partials/footer") %>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
