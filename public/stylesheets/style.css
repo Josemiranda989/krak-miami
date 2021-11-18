@@ -537,5 +537,10 @@ footer ul {
 }
 
 .form-contact-textarea {
-   resize: none
+   resize: none;
+  border: 1px solid rgb(0,152,167);
+}
+
+  input[type=text], input[type=email], input[type=tel]  {
+  border: 1px solid rgb(0,152,167);
 }
