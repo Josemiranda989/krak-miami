@@ -37,12 +37,19 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATE,
 
     },
+
+    deleted_at: {
+      type: DataTypes.DATE,
+
+    },
   }
 
   let config = {
     tableName: 'Consultas',
     createdAt: "created_at",
-    updatedAt: "updated_at"
+    updatedAt: "updated_at",
+    deletedAt: "deleted_at",
+    paranoid: true
   }
 
   let Consultas = sequelize.define(alias, cols, config)

@@ -150,7 +150,7 @@ body {
 .borde-img {
   position: absolute;
   height: 650px;
-  top: 975px;
+  top: 880px;
   left: 5px;
   border: 2px solid rgb(0, 153, 167);
 }
@@ -549,7 +549,7 @@ footer ul {
 
 .consultas-box {
   min-height: 800px;
-  padding-top: 150px;
+  padding: 150px 0 50px 0;
 
 }
 
@@ -557,6 +557,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  border: 5px solid rgb(248, 218, 215);   
 }
 
 .th {
@@ -573,6 +574,32 @@ tr:nth-child(even) {
   background-color: #dddddd;
 }
 
-.check input {
-  background: #500707;
+.delete input, button, submit {
+  border: none;
+  background: transparent;
+} 
+
+.paginado {
+  display:flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.btn-pag {
+  padding: 10px 20px;
+  margin-left: 30px;
+}
+
+.titulo-consultas {
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo-consultas small {
+  color: rgb(0,152,167);
+  margin-top: 22px;
+}
+
+.selectedLink {
+  border: 1px solid rgb(241,141,130);
 }
