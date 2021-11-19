@@ -31,9 +31,9 @@ const mainController = {
     const resultsPerPage = 10;
     db.Consultas.findAll()
       .then(result => {
-      const numOfResults = result.length;
-      const numberOfPages = Math.ceil(numOfResults / resultsPerPage);
-      let page = req.query.page ? Number(req.query.page) : 1;
+      const numOfResults = result.length;//total de consultas 30
+      const numberOfPages = Math.ceil(numOfResults / resultsPerPage);//30 / 10 = 3 numberofpage
+      let page = req.query.page ? Number(req.query.page) : 1; //page= 
       if (page > numberOfPages) {
         res.redirect('/?page=' + encodeURIComponent(numberOfPages))
       } else if (page < 1) {
@@ -47,10 +47,10 @@ const mainController = {
         limit: resultsPerPage,
         order: [['created_at', 'DESC']]
       }).then(result => {
-        let iterator = (page - 5) < 1 ? 1 : page - 5;
-        let endingLink = (iterator + 9) <= numberOfPages ? (iterator + 9) : page + (numberOfPages - page);
+        let iterator = (page - 5) < 1 ? 1 : page - 5; //page 7
+        let endingLink = (iterator + 9) <= numberOfPages ? (iterator + 9) : page + (numberOfPages - page);//i 2 - ending 3
         if (endingLink < (page + 4)) {
-          iterator -= (page - 4) - numberOfPages;
+          iterator -= (page + 4) - numberOfPages;// i = 2
         }
         res.render('consultas', { data: result, page, iterator, endingLink, numberOfPages })
       })
