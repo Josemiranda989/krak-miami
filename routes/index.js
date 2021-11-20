@@ -12,6 +12,7 @@ router.post('/form', mainController.almacenamiento);
 /* Consultas */
 router.get('/consultas', mainController.consultas);
 
+/* Borrar Consultas */
 router.delete('/borrar/:id', mainController.borrar);
 
 module.exports = router;
