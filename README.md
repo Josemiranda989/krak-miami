@@ -8,7 +8,7 @@
 
 > Landing Page para ventas de propiedades en Miami
 
-### 🏠 [Homepage](www.krak-miami.herokuapp.com)
+### 🏠 [Homepage](https://krak-miami.herokuapp.com/)
 
 ### ✨ [Demo](http://localhost:3000/)
 
